@@ -138,4 +138,19 @@ public class LinkedList {
     }
     return a;
   }
+
+  public Node getMiddle() {
+    Node a = first;
+    Node b = first;
+
+    while (b != last && b.getNext() != last) {
+      a = a.getNext();
+      b = b.getNext();
+      if (b.getNext() != null) {
+        b = b.getNext();
+      }
+    }
+
+    return a;
+  }
 }
