@@ -1,8 +1,9 @@
 public class App {
 
   public static void main(String[] args) throws Exception {
-    String str = "abcd";
-    StringReverser reverser = new StringReverser();
-    System.out.println(reverser.reverse(str));
+    String str = "(1+2))(";
+    Expression exp = new Expression();
+    boolean result = exp.isBalanced(str);
+    System.out.println(result);
   }
 }
