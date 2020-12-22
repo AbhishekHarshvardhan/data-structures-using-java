@@ -1,12 +1,14 @@
 public class App {
 
   public static void main(String[] args) throws Exception {
-    Array numbers = new Array(3);
-    numbers.insert(10);
-    numbers.insert(20);
-    numbers.insert(30);
-    numbers.insert(40);
-    numbers.insert(50);
-    numbers.print();
+    LinkedList list = new LinkedList();
+    list.addLast(10);
+    list.addLast(20);
+    list.addLast(30);
+    list.addLast(40);
+    list.addLast(50);
+    list.addLast(60);
+
+    System.out.println(list.getKthNodeFromLast(2));
   }
 }
